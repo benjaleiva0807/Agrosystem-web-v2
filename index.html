@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSystem - Invernaderos Inteligentes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#inicio" class="logo">
+            <img src="images/logo.png" alt="Logo de AgroSystem">
+            <span>AgroSystem</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#contacto" class="boton principal">Solicita una Cotización</a>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-texto">
+                <p class="etiqueta">AUTOMATIZACIÓN DE INVERNADEROS</p>
+                <h1>Tecnología que impulsa el crecimiento de tus cultivos</h1>
+                <p class="descripcion">Innovación en invernaderos inteligentes para una agricultura sostenible.</p>
+                <a href="#servicios" class="boton principal">Conoce nuestras soluciones</a>
+            </div>
+            <div id="panel">
+                <p class="nota">Datos simulados con fines demostrativos</p>
+                <h3>Invernadero 1 <span class="estado">● En operación</span></h3>
+                <ul>
+                    <li><span>Iluminación</span> <strong><span id="luz">300</span> µmol/m²/s</strong></li>
+                    <li><span>Riego</span> <strong id="riego">Activo · 12 min</strong></li>
+                    <li><span>Temperatura</span> <strong><span id="temp">22.4</span> °C</strong></li>
+                    <li><span>Humedad</span> <strong><span id="humedad">68</span> %</strong></li>
+                </ul>
+            </div>
+        </section>
+        <section class="beneficios">
+            <div class="beneficio">
+                <h3>Mayor rendimiento</h3>
+                <p>Ambientes controlados para un crecimiento óptimo.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Uso eficiente del agua</h3>
+                <p>Riego automatizado y preciso según las necesidades del cultivo.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Ahorro energético</h3>
+                <p>Iluminación y climatización inteligente.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Monitoreo y control total</h3>
+                <p>Desde cualquier lugar, en tiempo real.</p>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>AgroSystem es una empresa dedicada a la implementación de tecnologías avanzadas en invernaderos,
+                optimizando el crecimiento de cultivos y reduciendo el impacto ambiental.</p>
+        </section>
+
+        <section id="servicios">
+            <p class="etiqueta">NUESTRAS SOLUCIONES</p>
+            <h2>Todo lo que tu invernadero necesita, en un solo sistema</h2>
+            <p>Integramos tecnología y experiencia para automatizar los procesos clave de tu invernadero, desde la
+                iluminación hasta el riego y el control ambiental.</p>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <img src="images/led.jpg" alt="Invernadero con iluminación artificial para cultivos" loading="lazy">
+                    <div class="tarjeta-texto">
+                        <h3>Sistemas de iluminación</h3>
+                        <p>Control de fotoperiodo e intensidad lumínica para un desarrollo constante y saludable de tus
+                            cultivos.</p>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <img src="images/irrigation.jpg" alt="Sistema de riego automatizado para invernaderos"
+                        loading="lazy">
+                    <div class="tarjeta-texto">
+                        <h3>Sistemas de riego</h3>
+                        <p>Riego por goteo y fertirriego automatizado, con sensores de humedad y clima.</p>
+                </article>
+                <article class="tarjeta">
+                    <img src="images/panel-control.jpg" alt="Panel de control de invernadero inteligente"
+                        loading="lazy">
+                    <div class="tarjeta-texto">
+                        <h3>Paneles de control</h3>
+                        <p>Gestión centralizada y personalizada de todos los sistemas del invernadero.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="form-contacto" action="#" method="post" novalidate>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <small class="error" id="error-nombre"></small>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <small class="error" id="error-email"></small>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <small class="error" id="error-mensaje"></small>
+
+                <button type="submit" class="boton principal">Enviar</button>
+                <p id="resultado-form"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-marca">🌿 AgroSystem</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="footer-contacto">
+            <p>contacto@agrosystem.example</p>
+            <p>+56 9 0000 0000</p>
+            <p>Santiago, Chile</p>
+        </div>
+        <p class="copyright">© 2026 AgroSystem. Proyecto ficticio de portafolio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
